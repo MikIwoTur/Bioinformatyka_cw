@@ -119,7 +119,7 @@ kaspaza3 = (DXXDX, EXXDX, DXXEX, EXXEX)
 print(sum(kaspaza3))
 output: 32000
 
-""" Identyczna sytuacja prezentuje sie z kaspaza 2, ktora to po prostu zawiera,
+""" Identyczna sytuacja prezentuje sie z kalpainy 2, ktora to po prostu zawiera,
 mniejsza ilosc sekwencji cietych.
 """
 
@@ -127,9 +127,9 @@ LXX = 1 * 20 * 20
 VXX = 1 * 20 * 20
 IXX = 1 * 20 * 20
 
-kaspaza2 = (LXX, VXX, IXX)
+kalapina2 = (LXX, VXX, IXX)
 
-print(sum(kaspaza2))
+print(sum(kalpaina2))
 # output: 1200
 
 # zadanie 4 i 5
@@ -191,10 +191,21 @@ HEVSASTQSTPASSRAQTLPTSVVTITSESSPGKREKDKEKDKEKRFSLFGKKK
 szukajKaz3 = len(re.findall('([DE]..[DE].)', biblioteka))
 """ funkcja szukajKaz3 pozwoli mi na zanlezienie ilosci miejsc ciecia kapsazy-3"""
 
-szukajKaz2 = len(re.findall('([ILV]..)', biblioteka))
+szukajKal2 = len(re.findall('([ILV]..)', biblioteka))
+""" analogicznie szuka ilosci mijesc ciecia dla kalpainy-2 """
 
-print(szukajKaz2)
+print(szukajKal2)
 print(szukajKaz3)
 
 # zadanie 7 i 8
+
+"""
+W przypadku kaspazy-3, aby otrzymac sekwencje o masie 108 i 80 kDa miejsce ciecia mogloby sie znajdowac w pozycji:
+    108: ELVDR (POzycja: 954-959).
+    80: EMAEE (Pozycja: 654-659).
+
+Dla kalpainy-2 miejsca te beda sie znajdowac w pozycjach:
+    85: LEQ (738-741).
+    110: LVD (955-958).
+"""
 
