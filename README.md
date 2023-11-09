@@ -1,2 +1,2 @@
 # Bioinformatyka_cw
-kolejne cwiczenia sa w bran
+kolejne cwiczenia sa w branches
